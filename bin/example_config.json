@@ -1,0 +1,15 @@
+{
+  "conservation": 0.90,
+  "inclusion": 0.70,
+  "threads": null,
+  "filter_gaps": true,
+  "gap_threshold": 0.10,
+  "length_disparity_threshold": 0.20,
+  "timeout_base": 120,
+  "timeout_per_base": 5000,
+  "max_timeout": 1800,
+  "quality_threshold": 0.5,
+  "enable_progress_bars": true,
+  "enable_checkpointing": true,
+  "checkpoint_interval": 10
+}
