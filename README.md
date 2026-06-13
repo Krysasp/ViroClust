@@ -2,7 +2,7 @@
 
 **Auto-align sequences and generate consensus based on cluster files**
 
-ViroClust is a comprehensive bioinformatics pipeline for viral sequence analysis. It automatically aligns sequences based on cluster definitions (e.g., from CD-HIT) and generates high-quality consensus sequences with IUPAC ambiguity codes, gap filtering, and quality scoring.
+ViroClust is a comprehensive bioinformatics pipeline for viral sequence analysis. It automatically aligns sequences based on cluster definitions (e.g., from CD-HIT) and generates high-quality consensus sequences accepting IUPAC ambiguity codes, gap filtering, and quality scoring.
 
 ## Features
 
@@ -249,10 +249,6 @@ For clusters with significant length disparity (≥20% ratio):
 ### FASTA File
 
 Standard FASTA format with descriptive headers:
-```
->MW815973|Human_adenovirus_7_|Adenoviridae|Mastadenovirus|China|2019-06-21
-TAATATACCTTATAGATGGAATGGTGCCAATATGCAAATGAGGTAATTTAAAAAAGTGCG
-```
 
 ### Cluster File (.clstr)
 
@@ -376,10 +372,10 @@ pytest tests/test_config.py -v
 
 ```bibtex
 @software{viroclust2026,
-  author = {ViroClust Team},
+  author = {IHCM/NGS},
   title = {ViroClust: Auto-align sequences and generate consensus based on cluster files},
   year = {2026},
-  url = {https://github.com/yourusername/ViroClust},
+  url = {https://github.com/Krysasp/ViroClust},
   version = {1.0.0}
 }
 ```
@@ -418,7 +414,4 @@ For issues, questions, or contributions:
 
 ---
 
-**Built with ❤️ for viral sequence analysis**
-</content>
-<parameter=filePath>
-/home/ihcm-ubuntu/ViroClust/README.md
+**Built for viral sequence analysis**
