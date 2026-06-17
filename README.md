@@ -200,16 +200,7 @@ ViroClust uses JSON-based configuration. Create a config file or use command-lin
 
 ## Key Features Explained
 
-### 1. IUPAC Consensus Generation
-
-ViroClust generates consensus sequences with IUPAC ambiguity codes to represent sequence variation:
-
-- **R** (A/G), **Y** (C/T), **S** (G/C), **W** (A/T)
-- **K** (G/T), **M** (A/C)
-- **B** (C/G/T), **D** (A/G/T), **H** (A/C/T), **V** (A/C/G)
-- **N** (A/C/G/T)
-
-### 2. Quality Scoring
+### 1. Quality Scoring
 
 Position-level quality scores (0.0-1.0) based on:
 - Agreement percentage with consensus
@@ -222,7 +213,7 @@ Position-level quality scores (0.0-1.0) based on:
 - **Low (≥0.5)**: Weak agreement, 3-way ambiguity
 - **Very Low (<0.5)**: Poor agreement, high ambiguity or gaps
 
-### 3. Extended Region Handling
+### 2. Extended Region Handling
 
 For clusters with significant length disparity (≥20% ratio):
 - Reference sequences (marked with '*') are identified and placed first
@@ -230,14 +221,14 @@ For clusters with significant length disparity (≥20% ratio):
 - Bypass standard inclusion threshold for better coverage
 - Separate quality scoring for extended regions
 
-### 4. Checkpoint/Resume
+### 3. Checkpoint/Resume
 
 - Automatic checkpoint every N clusters (configurable)
 - Resume interrupted runs from last checkpoint
 - Atomic writes to prevent corruption
 - Detailed checkpoint summary reports
 
-### 5. Progress Tracking
+### 4. Progress Tracking
 
 - Real-time progress bars using tqdm
 - Cluster-by-cluster status updates
@@ -380,26 +371,6 @@ pytest tests/test_config.py -v
 }
 ```
 
-## License
-
-MIT License - see LICENSE file for details
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes
-4. Run tests (`pytest tests/ -v`)
-5. Commit your changes (`git commit -m 'Add amazing feature'`)
-6. Push to the branch (`git push origin feature/amazing-feature`)
-7. Open a Pull Request
-
-## Support
-
-For issues, questions, or contributions:
-- **GitHub Issues**: https://github.com/yourusername/ViroClust/issues
-- **Documentation**: See `MODULE_IMPROVEMENTS.md` for detailed module documentation
-- **Tests**: See `tests/` directory for usage examples
 
 ## Changelog
 
